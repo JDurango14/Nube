@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-WORKDIR /usr/share/nginx/html
+WORKDIR \Users\USUARIO\Desktop\Universidad\Semestre 9\Nube
 
 run rm -rf ./*
 

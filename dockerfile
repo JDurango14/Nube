@@ -1,11 +1,11 @@
 FROM nginx:alpine
 
-WORKDIR \Users\USUARIO\Desktop\Universidad\Semestre 9\Nube
+WORKDIR /usr/share/nginx/html
 
-run rm -rf ./*
+RUN rm -rf ./*
 
-copy . .
+COPY . .
 
-expose 80
+EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
